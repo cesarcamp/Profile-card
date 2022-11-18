@@ -1,9 +1,9 @@
 html, body {
     margin: 0;
     height: 100%;
-    background: linear-gradient(to right, hsl(193, 3%, 80%) 10%,hsl(0, 0%, 20%));
-    color: white;
-    font-family: 'PT Sans Narrow', sans-serif;
+    background: linear-gradient(to right,#f8f7f3 30%,hsl(120, 2%, 80%));
+    color: hsl(40,10%,90%);
+    font-family: 'heebo', sans-serif;
     position: relative;
 }
 
@@ -18,18 +18,58 @@ html, body {
     left: 5%;
     right: 5%;
     margin: 0;
-
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    position: absolute;
+    width: 100%;
+    align-items: center;
 }
 
-.content img {
-    position: relative;
+img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
-    
+    object-fit:cover;
+    position: relative;
 }
+
+.content h1 {
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: -.5px;
+
+}
+
+.content p {
+    margin: 0;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+
+}
+
+.buttons {
+    display: flex;
+    margin: 0;
+    padding-top: 28px;
+    text-align: center;
+    justify-content: space-between;
+    width: 120px;  
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    font-size: 18px;
+    transition: .1s ease-out;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+

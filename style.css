@@ -11,7 +11,7 @@ html, body {
     height: 500px;
     min-width: 90%;
     background-color: black;
-    overflow: hidden;
+    /*overflow: hidden;*/
     top: 50%;
     transform: translateY(-50%);
     right: 5%;
@@ -89,28 +89,16 @@ a:visited {
 @media (min-width:1024px) {
     
     .content {
-        display: inline-block;
-        position: relative;
+        flex-direction: row;
     }
 
+    .maincontent {
+        margin: 0;
+        padding-left: 30px;
+    }
     img {
         height: 100%;
         width: 50%;
         object-position: 50% 44%;
-        display: inline-block;
-    }
-
-    h1 {
-        display: inline-block;
-        margin: 0;
-        padding-left: 30px;
-        top: -20%;
-
-    }
-
-    p {
-        display: inline-block;
-        margin: 0;
-        padding-right: -30px;
     }
 }
